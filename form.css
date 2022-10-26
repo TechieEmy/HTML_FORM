@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+}
+body{
+                    background-image: url('pic/form_backg.jpg');
+                   background-size: cover;
+}
+main{
+                    display: flex;
+}
+main .main_text{
+margin: auto;
+position: relative;
+margin-top: 20%;
+left: 10%;
+}
+
+.main_text h2{
+    font-family: 'Big shoulders Display';
+    font-size: 40px;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.main_text small{
+     font-family: 'Lexend Deca';
+     font-size: 14px;
+     font-weight: 200;
+     color: whitesmoke;
+}
+
+main .tag{
+    background-color: rgb(101, 28, 170);
+    height: 40%;
+    padding: 15px 105px 15px 100px;
+    white-space: nowrap;
+    margin-top: 7%;
+    position: relative;
+    left: 24.2%;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+.tag span{
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+.tag p{
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    color: whitesmoke;
+}
+main .container_form{
+    background-color: white;
+    border-radius: 5px;
+     margin: auto;
+   margin-top: 12%; 
+    position: relative;
+    padding: 5px;
+    right: 10%;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 410px;
+    margin: 28px;
+    border: 1px solid grey;
+    border-radius: 4px;
+  outline-color: blueviolet;
+  outline-style: thin;
+  padding: 15px;
+}
+button{
+    background-color:rgb(18, 214, 18);
+    height: 38px;
+    width: 390px;
+    margin-left: 38px;
+    border-radius: 3px;
+    border: rgb(109, 238, 109);
+    font-family: 'Lexend Deca';
+    font-size: 10px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.container_form p{
+    margin-top: 4px;
+    font-size: 11px;
+    color: gray;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.container_form span{
+    color: red;
+}
+
+/* media querries */
+@media screen and (max-width: 1040px) {
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+    main{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+    }
+   .main_text{
+        
+        position: relative;
+        left: 36%;
+        bottom: 38%;
+        
+    }
+   main .container_form{
+        position: relative;
+        right: 20%;
+    }
+    main .tag{
+        position: relative;
+        left: 26%;
+        bottom: 10px;
+    }
+
+}
+
+/* media querry for small device */
+
+@media screen and (max-width:650px){
+    body{
+      background-size: cover;
+      background-position: center;
+         overflow-x: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+      width: 50%;
+    }
+  main .main_text{
+    position: relative;
+  left: 50%;
+    top: 5%;
+  }
+  main .tag{
+    width: 275px;
+    top: 10%;
+    position: relative;
+    right: 15%;
+  }
+  main .tag p{
+    position: relative;
+    right:5.4rem;
+  }
+  .container_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 18%;
+    width: 250px;
+  }
+  .container_form{
+    left: 5.8rem;
+  }
+  .container_form input{
+    width: 200px;
+    position: relative;
+    left: 1%;
+  }
+  button{
+    width: 230px;
+    position: relative;
+    right: 7%;
+  }
+   main .tag{
+    width: 255px;
+    position: relative;
+     left: 5.6rem;
+  }
+  main .tag p{
+    letter-spacing: 0.2px;
+    right: 95px;
+  }
+  
+}
+/* for small devices */
+@media screen and (max-width: 375px){
+ body{
+      background-size: cover;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+      width: 50%;
+    
+    }
+  main .main_text{
+    position: relative;
+  left: 50%;
+    top: 5%;
+  }
+  main .tag{
+    width: 230px;
+    position: relative;
+  left: 1rem;
+    top: 10%;
+  }
+  main .tag p{
+    position: relative;
+    right: 5.5rem;
+    letter-spacing: -1px;
+    padding:1px 2px 1px 2px;
+    
+    
+  }
+  .container_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5%;
+  }
+  
+}
